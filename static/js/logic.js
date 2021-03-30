@@ -17,3 +17,21 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   id: "mapbox/streets-v11",
   accessToken: API_KEY
 }).addTo(myMap);
+
+var url = "https://data.townofcary.org/api/v2/catalog/datasets/cpd-incidents/exports/geojson"
+
+//console.log(url)
+
+d3.json(url, function(error, data){
+  console.log(data)
+})
+
+// read response body and parse as JSON
+
+// Loop through the streetlights array and create one marker for each light, bind a popup containing its name and population add it to the map
+//for (var i = 0; i < cities.length; i++) {
+//  var city = cities[i];
+//  L.marker(city.location)
+//    .bindPopup("<h1>" + city.name + "</h1> <hr> <h3>Population " + city.population + "</h3>")
+//    .addTo(myMap);
+//}
