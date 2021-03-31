@@ -44,15 +44,13 @@ function createMap(crimeReports) {
 
 function createMarkers(response) {
 
-  // Pull the "stations" property off of response.data
-  //var = response.data.stations;
-
-  // Initialize an array to hold bike markers
+  
+  // Initialize an array to hold crime markers
   var crimeMarkers = [];
   var crimes_2020 = [];
-  //var crime_2019 =[]:
+  //add other years.  but will need to toggle between them. e.g. var crime_2019 =[]:
 
-  // Loop through the incident array, filter for years 2019 and 2020
+  // Loop through the crime incident array, filter for year 2020
   for (var index = 0; index < response.length; index++) {
     if (response[index].year === "2020") {
       crimes_2020.push(response[index]);
@@ -69,6 +67,7 @@ function createMarkers(response) {
   }
   // Create a layer group made from the bike markers array, pass it into the createMap function
   createMap(L.layerGroup(crimeMarkers));
+  
 
   }
 
