@@ -17,4 +17,4 @@ crimes.ipynb contains the code for importing json into pandas and cleaning it up
 
 makin sql converts our pandas db into an sqlite database.
 
-We Used the postgres data base for the flask app.
+We used the postgres data base for the flask app.
