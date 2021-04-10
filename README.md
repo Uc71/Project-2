@@ -1,4 +1,4 @@
-# Project-2
+# Mapping Crime and Streetlights in Cary, NC
 Will Sargent, James Bryant, Ken Saville, & Scott Thomas
 
 This project's aim is to display crimes and streetlights as superimposed, swithable layers on a map of the city of Cary, NC.
