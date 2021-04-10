@@ -15,6 +15,6 @@ app.py is the flask app to hold the data and the maps. It connects to our Postgr
 
 crimes.ipynb contains the code for importing json into pandas and cleaning it up, then generatig a postgres database.
 
-makin sql converts our pandas db into an sqlite database.
+making_sqlite.ipynb converts our pandas db into an sqlite database.
 
 We used the postgres data base for the flask app.
